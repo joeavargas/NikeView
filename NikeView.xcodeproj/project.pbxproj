@@ -13,6 +13,7 @@
 		E39D27B427FBE8090032550A /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D27B327FBE8090032550A /* FavoritesView.swift */; };
 		E39D27B627FBE8150032550A /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D27B527FBE8150032550A /* CartView.swift */; };
 		E39D27B827FBE81E0032550A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D27B727FBE81E0032550A /* SettingsView.swift */; };
+		E39D27BB27FC67350032550A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D27BA27FC67350032550A /* HomeViewModel.swift */; };
 		E3B2B53C27FBE3BA00DC2877 /* NikeViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B53B27FBE3BA00DC2877 /* NikeViewApp.swift */; };
 		E3B2B54027FBE3BC00DC2877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B2B53F27FBE3BC00DC2877 /* Assets.xcassets */; };
 		E3B2B54327FBE3BC00DC2877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B2B54227FBE3BC00DC2877 /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		E39D27B327FBE8090032550A /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		E39D27B527FBE8150032550A /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		E39D27B727FBE81E0032550A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E39D27BA27FC67350032550A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E3B2B53827FBE3BA00DC2877 /* NikeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B2B53B27FBE3BA00DC2877 /* NikeViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeViewApp.swift; sourceTree = "<group>"; };
 		E3B2B53F27FBE3BC00DC2877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E39D27B927FC671D0032550A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E39D27BA27FC67350032550A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E3B2B52F27FBE3BA00DC2877 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 			children = (
 				E39D27AE27FBE6260032550A /* Model */,
 				E39D27AD27FBE60C0032550A /* View */,
+				E39D27B927FC671D0032550A /* ViewModel */,
 				E39D27AC27FBE59D0032550A /* Screens */,
 				E3B2B53F27FBE3BC00DC2877 /* Assets.xcassets */,
 				E3B2B54127FBE3BC00DC2877 /* Preview Content */,
@@ -179,6 +190,7 @@
 				E39D27B827FBE81E0032550A /* SettingsView.swift in Sources */,
 				E39D27B627FBE8150032550A /* CartView.swift in Sources */,
 				E39D27B427FBE8090032550A /* FavoritesView.swift in Sources */,
+				E39D27BB27FC67350032550A /* HomeViewModel.swift in Sources */,
 				E39D27B027FBE6EF0032550A /* HomeView.swift in Sources */,
 				E39D27AB27FBE5230032550A /* MainView.swift in Sources */,
 				E39D27B227FBE7FA0032550A /* ShopView.swift in Sources */,

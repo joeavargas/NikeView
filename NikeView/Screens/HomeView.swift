@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var hvm: HomeViewModel
+
     var body: some View {
-        Text("HomeView")
+        ZStack {
+            VStack {
+                Text("Discover")
+                Text(hvm.todaysDate())
+            }
+        }
     }
+    
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(hvm: HomeViewModel())
     }
 }
