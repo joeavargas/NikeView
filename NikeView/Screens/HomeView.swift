@@ -68,62 +68,10 @@ struct HomeView: View {
                 
                 // MARK: - Feature article cards
                 
-                ZStack {
-                    Image("2")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text("2021 Yardrunners")
-                                .font(.subheadline)
-                            Text("Creating a limitless legacy")
-                                .font(.largeTitle)
-                                .bold()
-                            Button(action: hvm.goToArticleLink){
-                                Text("Explore")
-                                    .foregroundColor(.black)
-                            }
-                            .tint(.white)
-                            .buttonStyle(.borderedProminent)
-                            .buttonBorderShape(.capsule)
-                            .controlSize(.large)
-                        }
-                        .foregroundColor(.white)
-                        .offset(y: 150)
-                        Spacer()
-                    }//: HStack
-                    .padding()
-                    
-                }//: ZStack
-                
-                ZStack {
-                    Image("3")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text("Center Court with Nike Basketball")
-                                .font(.subheadline)
-                            Text("All Basketball, All The Time")
-                                .font(.largeTitle)
-                                .bold()
-                            Button(action: hvm.goToArticleLink){
-                                Text("Explore")
-                                    .foregroundColor(.black)
-                            }
-                            .tint(.white)
-                            .buttonStyle(.borderedProminent)
-                            .buttonBorderShape(.capsule)
-                            .controlSize(.large)
-                        }
-                        .foregroundColor(.white)
-                        .offset(y: 150)
-                        Spacer()
-                    }//: HStack
-                    .padding()
-                }//: ZStack
+                HeadlineCardView(hvm: hvm, imageString: "2", headline: "2021 Yardrunners", subHeadline: "Making a limitless legacy", hasLinkedArticle: true)
+
+                HeadlineCardView(hvm: hvm, imageString: "3", headline: "Center Court with Nike Basketball", subHeadline: "All Basketball, All The Time", hasLinkedArticle: true)
             }
-            
         }
     }
 }
