@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var hvm: HomeViewModel
-    var offsetY: CGFloat = 100
     
     var body: some View {
         ScrollView(.vertical) {
