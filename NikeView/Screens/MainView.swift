@@ -10,8 +10,28 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            
-        }
+            HomeView()
+                .tabItem{
+                    Label("", systemImage: "house")
+                }
+            ShopView()
+                .tabItem{
+                    Label("", systemImage: "bag")
+                }
+            FavoritesView()
+                .tabItem{
+                    Label("", systemImage: "heart")
+                }
+            CartView()
+                .tabItem{
+                    Label("", systemImage: "cart")
+                }
+            SettingsView()
+                .tabItem{
+                    Label("", systemImage: "person")
+                }
+        }//: TabView
+        .accentColor(.gray)
         .ignoresSafeArea()
     }
 }

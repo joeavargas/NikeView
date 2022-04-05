@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  CartView.swift
 //  NikeView
 //
 //  Created by Joe Vargas on 4/4/22.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct CartView: View {
     var body: some View {
-        Text("HomeView")
+        Text("CartView")
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        CartView()
     }
 }
