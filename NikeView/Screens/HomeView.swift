@@ -28,25 +28,7 @@ struct HomeView: View {
                 .padding()
                 
                 // MARK: - Headline card
-                ZStack {
-                    Image("1")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text("Just In")
-                                .font(.subheadline)
-                            Text("Shop Mens and Women's apparal")
-                                .font(.largeTitle)
-                                .bold()
-                        }
-                        .foregroundColor(.white)
-                        .offset(y: 100)
-                        Spacer()
-                    }//: HStack
-                    .padding()
-                    
-                }//: ZStack
+                HeadlineCardView(imageString: "1", headline: "Just in", subHeadline: "Shop Mens and Women's apparal")
                 
                 // MARK: - What's new section
                 HStack {
