@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E368CB5A27FCE1740009411A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368CB5927FCE1740009411A /* CardView.swift */; };
+		E368CB5C27FCE9870009411A /* ShoeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368CB5B27FCE9870009411A /* ShoeCardView.swift */; };
 		E39D27AB27FBE5230032550A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D27AA27FBE5230032550A /* MainView.swift */; };
 		E39D27B027FBE6EF0032550A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D27AF27FBE6EF0032550A /* HomeView.swift */; };
 		E39D27B227FBE7FA0032550A /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D27B127FBE7FA0032550A /* ShopView.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		E368CB5927FCE1740009411A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E368CB5B27FCE9870009411A /* ShoeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCardView.swift; sourceTree = "<group>"; };
 		E39D27AA27FBE5230032550A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E39D27AF27FBE6EF0032550A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E39D27B127FBE7FA0032550A /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E368CB5927FCE1740009411A /* CardView.swift */,
+				E368CB5B27FCE9870009411A /* ShoeCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				E39D27AB27FBE5230032550A /* MainView.swift in Sources */,
 				E39D27B227FBE7FA0032550A /* ShopView.swift in Sources */,
 				E3B2B53C27FBE3BA00DC2877 /* NikeViewApp.swift in Sources */,
+				E368CB5C27FCE9870009411A /* ShoeCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

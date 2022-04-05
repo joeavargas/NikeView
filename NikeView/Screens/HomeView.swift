@@ -47,21 +47,7 @@ struct HomeView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(1..<10) { _ in
-                            VStack {
-                                Image("Air Jordan XXXVI")
-                                    .resizable()
-                                    .frame(width: 300, height: 200)
-                                    .aspectRatio(contentMode: .fill)
-                                HStack {
-                                    VStack(alignment: .leading) {
-                                        Text("Air Jordan XXXVI")
-                                            .padding(.bottom, 3)
-                                        Text("$150")
-                                    }
-                                    Spacer()
-                                }
-                                .padding()
-                            }
+                            ShoeCardView(imageString: "Air Jordan XXXVI", shoeName: "Air Jordan XXXVI", shoePrice: 250.00)
                         }
                     }
                 }
