@@ -11,7 +11,7 @@ import SwiftUI
 struct NikeViewApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
