@@ -40,6 +40,20 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		E39D27AD27FBE60C0032550A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E39D27AE27FBE6260032550A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E3B2B52F27FBE3BA00DC2877 = {
 			isa = PBXGroup;
 			children = (
@@ -59,10 +73,12 @@
 		E3B2B53A27FBE3BA00DC2877 /* NikeView */ = {
 			isa = PBXGroup;
 			children = (
+				E39D27AE27FBE6260032550A /* Model */,
+				E39D27AD27FBE60C0032550A /* View */,
 				E39D27AC27FBE59D0032550A /* Screens */,
-				E3B2B53B27FBE3BA00DC2877 /* NikeViewApp.swift */,
 				E3B2B53F27FBE3BC00DC2877 /* Assets.xcassets */,
 				E3B2B54127FBE3BC00DC2877 /* Preview Content */,
+				E3B2B53B27FBE3BA00DC2877 /* NikeViewApp.swift */,
 			);
 			path = NikeView;
 			sourceTree = "<group>";
