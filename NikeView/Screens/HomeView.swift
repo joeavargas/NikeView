@@ -30,7 +30,7 @@ struct HomeView: View {
             ZStack {
                 Image("1")
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: .fill)
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Just In")
@@ -61,6 +61,26 @@ struct HomeView: View {
             .padding()
             
             // MARK: - Latest arrivals from Nike / Horizontal scroll
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(1..<10) { _ in
+                        VStack {
+                            Image("Air Jordan XXXVI")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text("Air Jordan XXXVI")
+                                        .padding(.bottom, 3)
+                                    Text("$150")
+                                }
+                                Spacer()
+                            }
+                            .padding()
+                        }
+                    }
+                }
+            }
             
             // MARK: - Feature article cards
         }
