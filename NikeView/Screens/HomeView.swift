@@ -28,7 +28,7 @@ struct HomeView: View {
                 .padding()
                 
                 // MARK: - Headline card
-                HeadlineCardView(imageString: "1", headline: "Just in", subHeadline: "Shop Mens and Women's apparal")
+                HeadlineCardView(hvm: hvm, imageString: "1", headline: "Just in", subHeadline: "Shop Mens and Women's apparal", hasLinkedArticle: false)
                 
                 // MARK: - What's new section
                 HStack {

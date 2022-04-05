@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct HeadlineCardView: View {
-    
+    let hvm: HomeViewModel
     var imageString: String
     var headline: String
     var subHeadline: String
+    var hasLinkedArticle: Bool
     
     var body: some View {
         ZStack {
@@ -25,6 +26,16 @@ struct HeadlineCardView: View {
                     Text(subHeadline)
                         .font(.largeTitle)
                         .bold()
+                    if hasLinkedArticle {
+                        Button(action: hvm.goToArticleLink){
+                            Text("Explore")
+                                .foregroundColor(.black)
+                        }
+                        .tint(.white)
+                        .buttonStyle(.borderedProminent)
+                        .buttonBorderShape(.capsule)
+                        .controlSize(.large)
+                    }
                 }
                 .foregroundColor(.white)
                 .offset(y: 100)
@@ -38,6 +49,6 @@ struct HeadlineCardView: View {
 
 struct HeadlineCardView_Previews: PreviewProvider {
     static var previews: some View {
-        HeadlineCardView(imageString: "1", headline: "Headline", subHeadline: "Subheadline")
+        HeadlineCardView(hvm: HomeViewModel(), imageString: "1", headline: "Headline", subHeadline: "Subheadline", hasLinkedArticle: false)
     }
 }
