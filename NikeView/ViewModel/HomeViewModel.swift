@@ -16,4 +16,7 @@ class HomeViewModel: ObservableObject {
         return formatter1.string(from: today)
     }
     
+    func goToArticleLink() {
+        print("Go to article link")
+    }
 }

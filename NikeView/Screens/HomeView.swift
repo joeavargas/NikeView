@@ -97,9 +97,17 @@ struct HomeView: View {
                             Text("Creating a limitless legacy")
                                 .font(.largeTitle)
                                 .bold()
+                            Button(action: hvm.goToArticleLink){
+                                Text("Explore")
+                                    .foregroundColor(.black)
+                            }
+                            .tint(.white)
+                            .buttonStyle(.borderedProminent)
+                            .buttonBorderShape(.capsule)
+                            .controlSize(.large)
                         }
                         .foregroundColor(.white)
-                        .offset(y: 200)
+                        .offset(y: 150)
                         Spacer()
                     }//: HStack
                     .padding()
@@ -117,13 +125,20 @@ struct HomeView: View {
                             Text("All Basketball, All The Time")
                                 .font(.largeTitle)
                                 .bold()
+                            Button(action: hvm.goToArticleLink){
+                                Text("Explore")
+                                    .foregroundColor(.black)
+                            }
+                            .tint(.white)
+                            .buttonStyle(.borderedProminent)
+                            .buttonBorderShape(.capsule)
+                            .controlSize(.large)
                         }
                         .foregroundColor(.white)
-                        .offset(y: 200)
+                        .offset(y: 150)
                         Spacer()
                     }//: HStack
                     .padding()
-                    
                 }//: ZStack
             }
             
