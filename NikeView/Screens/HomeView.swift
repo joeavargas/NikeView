@@ -25,11 +25,10 @@ struct HomeView: View {
                     Spacer()
                 }//: HStack
                 .padding()
-                
-                // MARK: - Headline card
+                                
+                // MARK: In a produciton app, I would query data provided from a database
                 CardView(hvm: hvm, imageString: "1", headline: "Just in", subHeadline: "Shop Mens and Women's apparal", hasLinkedArticle: false)
                 
-                // MARK: - What's new section
                 HStack {
                     VStack(alignment: .leading) {
                         Text("What's new")
@@ -41,8 +40,8 @@ struct HomeView: View {
                     Spacer()
                 }//: VStack
                 .padding()
-                
-                // MARK: - Latest arrivals from Nike / Horizontal scroll
+                                
+                // MARK: In a produciton app, I would cycle through an array of shoes provided from a database
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(1..<10) { _ in
@@ -50,9 +49,8 @@ struct HomeView: View {
                         }
                     }
                 }
-                
-                // MARK: - Feature article cards
-                
+                                
+                // MARK: In a produciton app, I would cycle through an array of articles provided from a database
                 CardView(hvm: hvm, imageString: "2", headline: "2021 Yardrunners", subHeadline: "Making a limitless legacy", hasLinkedArticle: true)
 
                 CardView(hvm: hvm, imageString: "3", headline: "Center Court with Nike Basketball", subHeadline: "All Basketball, All The Time", hasLinkedArticle: true)
