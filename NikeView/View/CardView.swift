@@ -1,5 +1,5 @@
 //
-//  HeadlineCardView.swift
+//  CardView.swift
 //  NikeView
 //
 //  Created by Joe Vargas on 4/5/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HeadlineCardView: View {
+struct CardView: View {
     let hvm: HomeViewModel
     var imageString: String
     var headline: String
@@ -49,6 +49,6 @@ struct HeadlineCardView: View {
 
 struct HeadlineCardView_Previews: PreviewProvider {
     static var previews: some View {
-        HeadlineCardView(hvm: HomeViewModel(), imageString: "1", headline: "Headline", subHeadline: "Subheadline", hasLinkedArticle: false)
+        CardView(hvm: HomeViewModel(), imageString: "1", headline: "Headline", subHeadline: "Subheadline", hasLinkedArticle: false)
     }
 }

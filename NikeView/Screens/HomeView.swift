@@ -28,7 +28,7 @@ struct HomeView: View {
                 .padding()
                 
                 // MARK: - Headline card
-                HeadlineCardView(hvm: hvm, imageString: "1", headline: "Just in", subHeadline: "Shop Mens and Women's apparal", hasLinkedArticle: false)
+                CardView(hvm: hvm, imageString: "1", headline: "Just in", subHeadline: "Shop Mens and Women's apparal", hasLinkedArticle: false)
                 
                 // MARK: - What's new section
                 HStack {
@@ -68,9 +68,9 @@ struct HomeView: View {
                 
                 // MARK: - Feature article cards
                 
-                HeadlineCardView(hvm: hvm, imageString: "2", headline: "2021 Yardrunners", subHeadline: "Making a limitless legacy", hasLinkedArticle: true)
+                CardView(hvm: hvm, imageString: "2", headline: "2021 Yardrunners", subHeadline: "Making a limitless legacy", hasLinkedArticle: true)
 
-                HeadlineCardView(hvm: hvm, imageString: "3", headline: "Center Court with Nike Basketball", subHeadline: "All Basketball, All The Time", hasLinkedArticle: true)
+                CardView(hvm: hvm, imageString: "3", headline: "Center Court with Nike Basketball", subHeadline: "All Basketball, All The Time", hasLinkedArticle: true)
             }
         }
     }
