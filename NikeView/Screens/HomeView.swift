@@ -27,6 +27,7 @@ struct HomeView: View {
             
             // MARK: - Headline card
             
+            
             // MARK: - What's new section / Latest arrivals from Nike
             
             // MARK: - Feature article cards
