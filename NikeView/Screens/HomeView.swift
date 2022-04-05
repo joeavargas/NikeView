@@ -47,7 +47,20 @@ struct HomeView: View {
                 
             }//: ZStack
             
-            // MARK: - What's new section / Latest arrivals from Nike
+            // MARK: - What's new section
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("What's new")
+                        .fontWeight(.medium)
+                    Text("The latest arrivals from Nike")
+                        .font(.title)
+                        .foregroundColor(.secondary)
+                }
+                Spacer()
+            }//: VStack
+            .padding()
+            
+            // MARK: - Latest arrivals from Nike / Horizontal scroll
             
             // MARK: - Feature article cards
         }
