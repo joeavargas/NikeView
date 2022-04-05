@@ -12,11 +12,19 @@ struct HomeView: View {
 
     var body: some View {
         ZStack {
-            VStack {
-                Text("Discover")
-                Text(hvm.todaysDate())
-            }
-        }
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Discover")
+                        .font(.system(size: 32))
+                        .fontWeight(.medium)
+                    Text(hvm.todaysDate())
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }//: VStack
+                Spacer()
+            }//: HStack
+            .padding()
+        }//: ZStack
     }
     
     
