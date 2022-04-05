@@ -31,7 +31,7 @@ struct MainView: View {
                     Label("", systemImage: "person")
                 }
         }//: TabView
-        .accentColor(.gray)
+        .accentColor(.pink)
         .ignoresSafeArea()
     }
 }
