@@ -41,7 +41,7 @@ struct HomeView: View {
                                 .bold()
                         }
                         .foregroundColor(.white)
-                        .offset(y: offsetY)
+                        .offset(y: 100)
                         Spacer()
                     }//: HStack
                     .padding()
@@ -85,6 +85,46 @@ struct HomeView: View {
                 }
                 
                 // MARK: - Feature article cards
+                
+                ZStack {
+                    Image("2")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("2021 Yardrunners")
+                                .font(.subheadline)
+                            Text("Creating a limitless legacy")
+                                .font(.largeTitle)
+                                .bold()
+                        }
+                        .foregroundColor(.white)
+                        .offset(y: 200)
+                        Spacer()
+                    }//: HStack
+                    .padding()
+                    
+                }//: ZStack
+                
+                ZStack {
+                    Image("3")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Center Court with Nike Basketball")
+                                .font(.subheadline)
+                            Text("All Basketball, All The Time")
+                                .font(.largeTitle)
+                                .bold()
+                        }
+                        .foregroundColor(.white)
+                        .offset(y: 200)
+                        Spacer()
+                    }//: HStack
+                    .padding()
+                    
+                }//: ZStack
             }
             
         }
