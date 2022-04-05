@@ -24,6 +24,12 @@ struct HomeView: View {
                 Spacer()
             }//: HStack
             .padding()
+            
+            // MARK: - Headline card
+            
+            // MARK: - What's new section / Latest arrivals from Nike
+            
+            // MARK: - Feature article cards
         }//: ZStack
     }
     
