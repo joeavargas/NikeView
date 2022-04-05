@@ -9,9 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var hvm: HomeViewModel
-
+    var offsetY: CGFloat = 100
+    
     var body: some View {
-        ZStack {
+        VStack {
             HStack {
                 VStack(alignment: .leading) {
                     Text("Discover")
@@ -26,15 +27,31 @@ struct HomeView: View {
             .padding()
             
             // MARK: - Headline card
-            
+            ZStack {
+                Image("1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("Just In")
+                            .font(.subheadline)
+                        Text("Shop Mens and Women's apparal")
+                            .font(.largeTitle)
+                            .bold()
+                    }
+                    .foregroundColor(.white)
+                    .offset(y: offsetY)
+                    Spacer()
+                }//: HStack
+                .padding()
+                
+            }//: ZStack
             
             // MARK: - What's new section / Latest arrivals from Nike
             
             // MARK: - Feature article cards
-        }//: ZStack
+        }
     }
-    
-    
 }
 
 struct HomeView_Previews: PreviewProvider {
